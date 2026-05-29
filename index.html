@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>AgroSustentável</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">O Projeto</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Equilíbrio entre Produção e Meio Ambiente</h2>
+            <p>Descubra como a tecnologia e a sustentabilidade garantem o futuro do nosso campo.</p>
+            <a href="#simulador" class="btn">Testar Simulador</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <h2>O Desafio do Século XXI</h2>
+        <p>Produzir alimentos para uma população crescente respeitando os limites do planeta é o maior desafio do agro moderno. O equilíbrio se faz com técnicas inteligentes, conservação do solo e respeito aos recursos hídricos.</p>
+    </section>
+
+    <section id="simulador">
+        <div class="container card">
+            <h2>Simulador de Impacto Econômico e Ambiental</h2>
+            <p>Selecione uma prática sustentável para ver a estimativa de economia de água na sua produção:</p>
+            
+            <div class="form-group">
+                <label for="tecnica">Escolha uma técnica:</label>
+                <select id="tecnica">
+                    <option value="0">Selecione...</option>
+                    <option value="gotejamento">Irrigação por Gotejamento Inteligente</option>
+                    <option value="cobertura">Plantio Direto (Palhada/Cobertura de Solo)</option>
+                    <option value="reuso">Captação e Reuso de Água da Chuva</option>
+                </select>
+            </div>
+
+            <button onclick="calcularImpacto()">Calcular Impacto</button>
+
+            <div id="resultado" class="hidden">
+                <h3>Resultado Estimado:</h3>
+                <p id="texto-resultado"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido com foco no Futuro Sustentável.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
